@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/productsLandingFragment">
+    <fragment
+        android:id="@+id/productsLandingFragment"
+        android:name="diego.garzon.ui.products_landing.ProductsLandingFragment"
+        android:label="ProductsLandingFragment" >
+        <action
+            android:id="@+id/action_productsLandingFragment_to_productFragment"
+            app:destination="@id/productFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="diego.garzon.ui.product.ProductFragment"
+        android:label="ProductFragment" >
+        <argument
+            android:name="product"
+            app:argType="diego.garzon.ui.products_landing.ProductTransactionsModel" />
+           <argument
+            android:name="rates"
+            app:argType="diego.garzon.ui.products_landing.RateDataModel[]" />
+    </fragment>
+</navigation>

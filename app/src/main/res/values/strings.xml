@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Goliath National Bank</string>
+    <string name="total_amount">Total amount: %s %s</string>
+    <string name="amount">Amount: %s</string>
+    <string name="total_products">Número de productos recuperados: %s</string>
+    <string name="format_2_strings">%s %s</string>
+    <string name="legendary">“It’s gonna be legen… wait for it… dary!”</string>
+
+
+</resources>
